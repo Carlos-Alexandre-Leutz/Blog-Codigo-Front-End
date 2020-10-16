@@ -29,6 +29,68 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .politicas {
+            position: fixed;
+            bottom: 15px;
+            left: 15px;
+        }
+        
+        .aviso {
+            background-color: black;
+            color: white;
+            padding: 7px;
+            border-radius: 5px;
+        }
+        
+        .concordar {
+            background-color: white;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        .box-cookies.hide {
+            display: none !important;
+        }
+        
+        .box-cookies {
+            position: fixed;
+            background: rgba(0, 0, 0, .9);
+            width: 100%;
+            z-index: 998;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .box-cookies .msg-cookies,
+        .box-cookies .btn-cookies {
+            text-align: center;
+            padding: 25px;
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .box-cookies .btn-cookies {
+            background: #1e88e5;
+            cursor: pointer;
+            align-self: normal;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .box-cookies {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
 </head>
 
 <body id="page-top">
@@ -66,7 +128,7 @@
                 <div class="masthead-subheading">Como Começar a Lucrar com Marketing Digital </div>
                 <div class="masthead-heading text-uppercase">Download Grátis</div>
             </div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="submissao-bem-sucedida.html">Download</a>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/">Download</a>
         </div>
     </header>
     <!-- Services-->
@@ -147,11 +209,11 @@
             <div class="row">
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link" href="html-css.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/Melhor-Curso-de-HTML5-e-CSS3-1900x946_c.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Html - Css</div>
@@ -166,11 +228,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link" href="Javascript.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/unnamed.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">JavaScript</div>
@@ -180,11 +242,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <a class="portfolio-link" href="marketingdigital.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/marketing-digital-maringa.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Marketing Digital</div>
@@ -199,11 +261,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <a class="portfolio-link" href="s.e.o.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/seo-para-mecanismos-de-busca.jpeg" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">S.E.O</div>
@@ -217,11 +279,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <a class="portfolio-link" href="wordpress.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/logo-wordpress-2048.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Wordpress</div>
@@ -233,11 +295,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <a class="portfolio-link" href="programacao.html">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
+                            <img class="img-fluid" src="assets/img/index/cropped-LogoSite-1.png" alt="" />
                         </a>
                         <div class="portfolio-caption">
                             <div class="portfolio-caption-heading">Programação</div>
@@ -380,6 +442,103 @@
         </div>
     </section>
 
+    <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+    <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.20859" type="text/javascript"></script>
+    <script type="text/javascript">
+        JotForm.init(function() {
+            if (window.JotForm && JotForm.accessible) $('input_1').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex', 0);
+            JotForm.newDefaultTheme = false;
+            JotForm.extendsNewTheme = false;
+            JotForm.newPaymentUIForNewCreatedForms = false;
+            /*INIT-END*/
+        });
+
+        JotForm.prepareCalculationsOnTheFly([null, {
+            "name": "nome1",
+            "qid": "1",
+            "text": "Nome:",
+            "type": "control_textbox"
+        }, {
+            "name": "enviar",
+            "qid": "2",
+            "text": "Enviar mensagem",
+            "type": "control_button"
+        }, {
+            "name": "email3",
+            "qid": "3",
+            "text": "Email:",
+            "type": "control_textbox"
+        }, null, {
+            "name": "mensagem",
+            "qid": "5",
+            "text": "Mensagem:",
+            "type": "control_textarea"
+        }, {
+            "name": "cliquePara",
+            "qid": "6",
+            "text": "Contato",
+            "type": "control_head"
+        }, {
+            "name": "cliquePara7",
+            "qid": "7",
+            "text": "Todos os campos marcados com * sao obrigatorios.",
+            "type": "control_text"
+        }]);
+        setTimeout(function() {
+            JotForm.paymentExtrasOnTheFly([null, {
+                "name": "nome1",
+                "qid": "1",
+                "text": "Nome:",
+                "type": "control_textbox"
+            }, {
+                "name": "enviar",
+                "qid": "2",
+                "text": "Enviar mensagem",
+                "type": "control_button"
+            }, {
+                "name": "email3",
+                "qid": "3",
+                "text": "Email:",
+                "type": "control_textbox"
+            }, null, {
+                "name": "mensagem",
+                "qid": "5",
+                "text": "Mensagem:",
+                "type": "control_textarea"
+            }, {
+                "name": "cliquePara",
+                "qid": "6",
+                "text": "Contato",
+                "type": "control_head"
+            }, {
+                "name": "cliquePara7",
+                "qid": "7",
+                "text": "Todos os campos marcados com * sao obrigatorios.",
+                "type": "control_text"
+            }]);
+        }, 20);
+    </script>
+
+    <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.20859" rel="stylesheet" type="text/css" />
+    <div class="box-cookies hide">
+        <p class="msg-cookies">Este site usa cookies para garantir que você obtenha a melhor experiência.</p>
+        <button class="btn-cookies">Aceitar!</button>
+    </div>
+    <!--
+
+        <div class="politicas">
+            <div class="aviso">
+                Nosso site utiliza cookies para melhorar sua experiência de navegação. <button class="concordar" id="fexarPP">concordar e fechar</button></div>
+                
+                
+            </div>
+        -->
+
+    </section>
+    <script>
+    </script>
     <!-- Contact-->
     <section class="page-section" id="contact">
         <div class="container">
@@ -387,6 +546,10 @@
                 <h2 class="section-heading text-uppercase">Fale Comigo</h2>
                 <h3 class="section-subheading text-white-50">Ei, sintase a vontade para falar comigo, vou te ajudar!, quer saber os conselhos que eu gostaria de ter recebido quando estava começando?</h3>
             </div>
+            <!--
+
+
+
             <form id="contactForm" name="sentMessage" novalidate="novalidate">
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
@@ -404,7 +567,7 @@
                                 <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
                                 <p class="help-block text-danger"></p>
                             </div>
-                        -->
+                        
                     </div>
                     <div class="col-md-6">
                         <div class="form-group form-group-textarea mb-md-0">
@@ -418,17 +581,96 @@
                     <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar</button>
                 </div>
             </form>
-        </div>
+        -->
+            <form class="jotform-form" action="https://submit.jotform.com/submit/202846864119664/" method="post" name="form_202846864119664" id="202846864119664" accept-charset="utf-8" autocomplete="on">
+                <input type="hidden" name="formID" value="202846864119664" />
+                <input type="hidden" id="JWTContainer" value="" />
+                <input type="hidden" id="cardinalOrderNumber" value="" />
+                <div role="main" class="form-all">
+                    <ul class="form-section page-section">
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-12">
+                                <div class="form-group">
+
+                                    <!--
+
+                                       <input class="form-control" id="name" type="text" placeholder="Seu Nome*" required="required" data-validation-required-message="Please enter your name." />
+                                   -->
+                                    <input placeholder="Seu Nome*" type="text" id="input_1" name="q1_nome1" data-type="input-textbox" class="form-control" size="30" value="" placeholder=" " data-component="textbox" aria-labelledby="label_1" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <!--
+
+                                     <input class="form-control" id="email" type="email" placeholder="Seu Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                 -->
+                                    <input placeholder="Seu Email *" class="form-control" type="text" id="input_3" name="q3_email3" data-type="input-textbox" data-component="textbox" aria-labelledby="label_3" required="" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <input placeholder="Sua Mensagem *" class="form-control" id="input_5" style="height: 150px;" name="q5_mensagem" cols="50" rows="10" data-component="textarea" required="" aria-labelledby="label_5" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <!--
+        
+                                    <div class="form-group mb-md-0">
+                                        <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                -->
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-textarea mb-md-0">
+
+                                    <!--
+                                        <textarea class="form-control" id="message" placeholder="Sua Mensagem *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    -->
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="text-center">
+                            <div id="success"></div>
+
+                            <button id="input_2" type="submit" class="btn btn-primary btn-xl text-uppercase" data-component="button" data-content="">Enviar</button>
+                        </div>
+
+
+                        <li style="display:none">
+                            Should be Empty:
+                            <input type="text" name="website" value="" />
+                        </li>
+
+                        <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="202846864119664" />
+                        <script type="text/javascript">
+                            var all_spc = document.querySelectorAll("form[id='202846864119664'] .si" + "mple" + "_spc");
+                            for (var i = 0; i < all_spc.length; i++) {
+                                all_spc[i].value = "202846864119664-202846864119664";
+                            }
+                        </script>
+
+            </form>
+
+
+            </div>
     </section>
+
+    <!--Aviso de uso de cooks-->
+
     <!-- Footer-->
     <footer class="footer py-4">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-left">Copyright © Your Website 2020</div>
+                <div class="col-lg-4 text-lg-left">Copyright © Código Front end 2020</div>
                 <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="blank" class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/channel/UCd4MhWhSeqK1Ga4OKOPSxSw?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+                    <a target="blank" class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/C%C3%B3digo-Front-end-113262850548838"><i class="fab fa-facebook-f"></i></a>
+                    <a target="blank" class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/carlos-leutz-1b1516185/"><i class="fab fa-linkedin-in"></i></a>
+                    <a target="blank" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/carlosalexandreleutz/?hl=pt-br"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="col-lg-4 text-lg-right">
                     <a class="mr-3" href="politicadeprivacidade.html">Privacy Policy</a>
@@ -634,6 +876,22 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script>
+        if (!localStorage.pureJavaScriptCookies) {
+            document.querySelector(".box-cookies").classList.remove('hide');
+        }
+
+        const acceptCookies = () => {
+            document.querySelector(".box-cookies").classList.add('hide');
+            localStorage.setItem("pureJavaScriptCookies", "accept");
+        };
+
+        const btnCookies = document.querySelector(".btn-cookies");
+
+        btnCookies.addEventListener('click', acceptCookies);
+    </script>
+
+
 </body>
 
 </html>
